@@ -1,0 +1,392 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins");
+body {
+  margin: 0;
+  width: 100%;
+  height: 100vh;
+  font-family: 'Poppins', sans-serif;
+}
+
+input, button {
+  font-family: 'Poppins', sans-serif;
+}
+
+input:focus, button:focus {
+  outline: none;
+}
+
+h1, h3, p {
+  margin: 0;
+}
+
+hr {
+  border: 1px solid #FFAB00;
+  width: 2em;
+}
+
+nav {
+  position: fixed;
+  width: 100%;
+  height: 5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 2;
+  background-color: white;
+}
+
+nav .logo {
+  display: block;
+  cursor: pointer;
+}
+
+nav .logo a {
+  text-decoration: none;
+  font-size: 2em;
+  color: #424242;
+}
+
+nav .nav-link a {
+  text-decoration: none;
+  text-transform: uppercase;
+  margin-right: 1.5em;
+  color: black;
+}
+
+.comtainer {
+  height: 100%;
+  padding: 0 15em;
+}
+
+div .jumbotron {
+  height: 100vh;
+  background-image: url(/img/iStock-523863286.jpg);
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+div .jumbotron::after {
+  content: '';
+  height: 100%;
+  width: 100%;
+  display: block;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5)));
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  position: absolute;
+}
+
+div .jumbotron h1 {
+  position: relative;
+  z-index: 1;
+  color: white;
+  font-size: 3em;
+}
+
+div .jumbotron div.input-search {
+  position: relative;
+  z-index: 1;
+}
+
+div .jumbotron div.input-search input {
+  padding-left: 1em;
+  height: 3em;
+  width: 25em;
+  border: none;
+  border-radius: .2em;
+}
+
+div .jumbotron div.input-search button {
+  height: 3em;
+  width: 8em;
+  border: none;
+  border-radius: .2em;
+  text-transform: capitalize;
+  cursor: pointer;
+  background-color: #FFAB00;
+  color: white;
+  font-weight: bolder;
+}
+
+div .content {
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (19em)[4];
+      grid-template-columns: repeat(4, 19em);
+  -ms-grid-rows: 12em;
+      grid-template-rows: 12em;
+  grid-column-gap: 1.5em;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+div .content .content-img {
+  width: 100%;
+  height: 100%;
+  border-radius: .2em;
+  margin: 2em 0;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  text-transform: capitalize;
+}
+
+div .content .content-img::after {
+  content: '';
+  height: 100%;
+  width: 100%;
+  display: block;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3)));
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
+  position: absolute;
+  bottom: 0;
+}
+
+div .content .content-img:nth-child(1) {
+  background-image: url(/img/5-interior-design-trends-for-2017-6.jpg);
+  background-size: cover;
+}
+
+div .content .content-img:nth-child(2) {
+  background-image: url(/img/Bishopswood-Contemporary-Kitchen-and-dining-room.jpg);
+  background-size: cover;
+}
+
+div .content .content-img:nth-child(3) {
+  background-image: url(/img/iStock-523863286.jpg);
+  background-size: cover;
+}
+
+div .content .content-img:nth-child(4) {
+  background-image: url(/img/poipuNOwineglass3crop.jpg);
+  background-size: cover;
+}
+
+div .content .content-img h1, div .content .content-img h3 {
+  position: relative;
+  z-index: 1;
+  font-weight: 100;
+}
+
+div .kosan {
+  margin: 4em 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+div .kosan h1 {
+  color: #424242;
+}
+
+div .kosan .card {
+  border: none;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (20em)[3];
+      grid-template-columns: repeat(3, 20em);
+  -ms-grid-rows: (30em)[2];
+      grid-template-rows: repeat(2, 30em);
+      grid-template-areas: ". . ." ". . ." ". button .";
+  grid-gap: 2em;
+  margin-top: 1em;
+}
+
+div .kosan .card .card-box img {
+  width: 100%;
+  height: 12em;
+  border-top-left-radius: 0.2em;
+  border-top-right-radius: 0.2em;
+}
+
+div .kosan .card .card-box h1 {
+  font-size: 1.7em;
+  line-height: 2em;
+}
+
+div .kosan .card .card-box h1 a {
+  text-decoration: none;
+  text-transform: capitalize;
+  color: #FFAB00;
+}
+
+div .kosan .card .card-box h3 {
+  font-weight: bolder;
+  margin-bottom: 1em;
+  color: #424242;
+}
+
+div .kosan .card .card-box .fasilitas {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: var(--liteGrayCol);
+  margin-bottom: 1em;
+}
+
+div .kosan .card .view {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+  grid-area: button;
+  height: 3.2em;
+  border: none;
+  border-radius: .2em;
+  text-transform: capitalize;
+  cursor: pointer;
+  background-color: #FFAB00;
+  color: white;
+  font-weight: bolder;
+}
+
+footer {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  -ms-grid-rows: (1fr)[2];
+      grid-template-rows: repeat(2, 1fr);
+      grid-template-areas: ". . ." "copy copy copy";
+  background-color: #191919;
+}
+
+footer .soc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .soc .logo {
+  font-size: 2em;
+  color: white;
+  font-weight: bolder;
+  margin: 1em 0;
+}
+
+footer .soc .sosmed {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+footer .soc .sosmed a {
+  margin: 1em;
+}
+
+footer .soc .sosmed a img {
+  width: 3em;
+  height: 3em;
+}
+
+footer .news {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: white;
+}
+
+footer .news h3 {
+  text-transform: capitalize;
+  font-size: 2em;
+  font-weight: bold;
+  margin: 1em 0;
+}
+
+footer .news .email input {
+  margin-top: 1em;
+  padding-left: 1em;
+  height: 3em;
+  width: 25em;
+  border: none;
+  border-radius: .2em;
+}
+
+footer .news .email button {
+  height: 3em;
+  width: 8em;
+  border: none;
+  border-radius: .2em;
+  text-transform: capitalize;
+  cursor: pointer;
+  background-color: #FFAB00;
+  color: white;
+  font-weight: bolder;
+}
+
+footer span {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: copy;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  color: #434345;
+}
+/*# sourceMappingURL=default.css.map */

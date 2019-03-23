@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+$grayCol : #424242;
+$liteGrayCol : #9E9E9E;
+$buttonCol : #FFAB00;
+
+.jumbotron-cat{
+    position: relative;
+    height: 60vh;
+    width: 100%;
+    background-image: url(/img/bricks-brickwall-brickwork-276514.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    
+}

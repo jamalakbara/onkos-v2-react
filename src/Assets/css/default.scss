@@ -1,0 +1,324 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+$grayCol : #424242;
+$liteGrayCol : #9E9E9E;
+$buttonCol : #FFAB00;
+
+body{
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+}
+
+input,button{
+    font-family: 'Poppins', sans-serif;
+
+    &:focus{
+        outline: none;
+    }
+}
+
+h1, h3, p{
+    margin: 0;
+}
+
+hr{
+    border: 1px solid $buttonCol;
+    width: 2em;
+}
+
+nav{
+    position: fixed;
+    width: 100%;
+    height: 5em;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 2;
+    background-color: white;
+
+    .logo{
+        display: block;
+        cursor: pointer;
+
+        a{
+            text-decoration: none;
+            font-size: 2em;
+            color: $grayCol;
+        }
+    }
+
+    .nav-link{
+        a{
+            text-decoration: none;
+            text-transform: uppercase;
+            margin-right: 1.5em;
+            color: black;
+        }
+    }
+}
+
+.comtainer{
+    height: 100%;
+    padding: 0 15em;
+}
+
+div{
+
+    .jumbotron{
+        height: 100vh;
+        background-image: url(/img/iStock-523863286.jpg);
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    
+        &::after{
+            content: '';
+            height: 100%;
+            width: 100%;
+            display: block;
+            background-image: linear-gradient(to top, rgba(0,0,0,0.5),rgba(0,0,0,0.5));
+            position: absolute;
+        }
+        
+        h1{
+            position: relative;
+            z-index: 1;
+            color: white;
+            font-size: 3em;
+        }
+        
+        div.input-search{
+            position: relative;
+            z-index: 1;
+
+            input{
+                padding-left: 1em;
+                height: 3em;
+                width: 25em;
+                border: none;
+                border-radius: .2em;
+            }
+            button{
+                height: 3em;
+                width: 8em;
+                border: none;
+                border-radius: .2em;
+                text-transform: capitalize;
+                cursor: pointer;
+                background-color: $buttonCol;
+                color: white;
+                font-weight: bolder;
+            }
+        }
+    }
+
+    .content{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(4, 19em);
+        grid-template-rows: 12em;
+        grid-column-gap: 1.5em;
+        justify-content: center;
+
+        .content-img{
+            width: 100%;
+            height: 100%;
+            border-radius: .2em;
+            margin: 2em 0;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: center;
+            color: white;
+            text-transform: capitalize;
+
+            &::after{
+                content: '';
+                height: 100%;
+                width: 100%;
+                display: block;
+                background-image: linear-gradient(to top, rgba(0,0,0,0.3),rgba(0,0,0,0.3));
+                position: absolute;
+                bottom: 0;
+            }
+
+            &:nth-child(1){
+                background-image: url(/img/5-interior-design-trends-for-2017-6.jpg);
+                background-size: cover;
+            }
+
+            &:nth-child(2){
+                background-image: url(/img/Bishopswood-Contemporary-Kitchen-and-dining-room.jpg);
+                background-size: cover;
+            }
+
+            &:nth-child(3){
+                background-image: url(/img/iStock-523863286.jpg);
+                background-size: cover;
+            }
+
+            &:nth-child(4){
+                background-image: url(/img/poipuNOwineglass3crop.jpg);
+                background-size: cover;
+            }
+
+            h1,h3{
+                position: relative;
+                z-index: 1;
+                font-weight: 100;
+            }
+        }
+    }
+
+    .kosan{
+        margin: 4em 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+
+        h1{
+            color: $grayCol;
+        }
+
+        .card{
+            border: none;
+            display: grid;
+            grid-template-columns: repeat(3, 20em);
+            grid-template-rows: repeat(2, 30em);
+            grid-template-areas: 
+                                ". . ."
+                                ". . ."
+                                ". button .";
+            grid-gap: 2em;
+            margin-top: 1em;
+
+            .card-box{
+                img{
+                    width: 100%;
+                    height: 12em;
+                    border-top-left-radius: 0.2em;
+                    border-top-right-radius: 0.2em;
+                }
+                h1{
+                    font-size: 1.7em;
+                    line-height: 2em;
+
+                    a{
+                        text-decoration: none;
+                        text-transform: capitalize;
+                        color: $buttonCol;  
+                    }
+                }
+                h3{
+                    font-weight: bolder;
+                    margin-bottom: 1em;
+                    color: $grayCol;
+                }
+                .fasilitas{
+                    display: flex;
+                    justify-content: space-between;
+                    color: var(--liteGrayCol);
+                    margin-bottom: 1em;
+                }
+            }
+
+            .view{
+                grid-area: button;
+                height: 3.2em;
+                border: none;
+                border-radius: .2em;
+                text-transform: capitalize;
+                cursor: pointer;
+                background-color: $buttonCol;
+                color: white;
+                font-weight: bolder;
+            }
+        }
+    }
+}
+
+footer{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+    grid-template-areas: 
+                        ". . ."
+                        "copy copy copy";
+    background-color: #191919;
+
+    .soc{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .logo{
+            font-size: 2em;
+            color: white;
+            font-weight: bolder;
+            margin: 1em 0;
+        }
+
+        .sosmed{
+            display: flex;
+            flex-direction: row;
+
+            a{
+                margin: 1em;
+
+                img{
+                    width: 3em;
+                    height: 3em;
+                }
+            }
+        }
+    }
+    .news{
+        display: flex;
+        flex-direction: column;
+        color: white;
+
+        h3{
+            text-transform: capitalize;
+            font-size: 2em;
+            font-weight: bold;
+            margin: 1em 0;
+        }
+        .email{
+            input{
+                margin-top: 1em;
+                padding-left: 1em;
+                height: 3em;
+                width: 25em;
+                border: none;
+                border-radius: .2em;
+            }
+            button{
+                height: 3em;
+                width: 8em;
+                border: none;
+                border-radius: .2em;
+                text-transform: capitalize;
+                cursor: pointer;
+                background-color: $buttonCol;
+                color: white;
+                font-weight: bolder;
+            }
+        }
+    }
+    span{
+        grid-area: copy;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        color: #434345;
+    }
+}
